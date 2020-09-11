@@ -3,7 +3,8 @@ import datetime
 from dealers.models import Dealer
 from django.urls import reverse
 
-# Create your models here.
+# Create your models here. Example -> Condition: Used Year:2014 Make:Nissan Model:Versa Trim:SL Colour:Black
+# BodyType: Sedan Drivetrain:Front-wheel drive (FWD) Transmission: Automatic Fuel Type: Gasoline Kilometers: 134,500
 class Car(models.Model):
     dealer = models.ForeignKey(Dealer, on_delete=models.DO_NOTHING)
     brand = models.CharField(max_length=100)
@@ -18,18 +19,33 @@ class Car(models.Model):
     image3 = models.ImageField(upload_to='images', blank=True)
     image4 = models.ImageField(upload_to='images', blank=True)
     image5 = models.ImageField(upload_to='images', blank=True)
+    image6 = models.ImageField(upload_to='images', blank=True)
+    image7 = models.ImageField(upload_to='images', blank=True)
+    image8 = models.ImageField(upload_to='images', blank=True)
+    image9 = models.ImageField(upload_to='images', blank=True)
+    image10 = models.ImageField(upload_to='images', blank=True)
+    image11 = models.ImageField(upload_to='images', blank=True)
+    image12 = models.ImageField(upload_to='images', blank=True)
+    image13 = models.ImageField(upload_to='images', blank=True)
+    image14 = models.ImageField(upload_to='images', blank=True)
+    image15 = models.ImageField(upload_to='images', blank=True)
 
-    miles = models.IntegerField(blank=True, null=True)
+    kilometers = models.IntegerField(blank=True, null=True)
     TRANSMISSION = (
                 ('Manual','Manual'),
                 ('Automatic','Automatic')
     )
-
+    model = models.CharField(max_length=50)
+    make = models.CharField(max_length=50)
+    trim = models.CharField(max_length=50)
+    fueltype = models.CharField(max_length=50)
     transmission = models.CharField(max_length=50, choices=TRANSMISSION)
+    drivetrain = models.CharField(max_length=50)
+    bodytype = models.CharField(max_length=50)
+    colour = models.CharField(max_length=50)
+
     YEAR_CHOICES = [(r,r) for r in range(2005, datetime.date.today().year+1)]
     year = models.IntegerField(('year'), choices=YEAR_CHOICES, default=datetime.datetime.now().year)
-    power = models.IntegerField()
-    fuel = models.IntegerField()
     price = models.IntegerField()
     description = models.TextField()
     date = models.DateField()

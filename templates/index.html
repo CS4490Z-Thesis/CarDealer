@@ -1,8 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-
-
-
 {% block content %}
 	<!-- Main Start -->
 	<div class="main-section">
@@ -25,7 +22,7 @@
 		<!--Main Banner form-->
 		<div class="page-section" style="background: rgba(36, 41, 49, 1); padding-top:33px;-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);-moz-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);box-shadow: 0 0 5px rgba(0,0,0,.4), inset 0px 2px rgba(255,255,255,.3);border: solid 1px #242931;margin-bottom:110px;">
 			<div class="container">
-				<div class="row">
+				<div class="row" style="text-align: center;">
 					<div class="section-fullwidtht col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="row">
 							<!--Element Section Start-->
@@ -34,10 +31,6 @@
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 								<p>Brand:</p>
 									{{ myFilter.form.brand }}
-									</div>
-									<div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
-								<p>Category:</p>
-									{{ myFilter.form.category }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 								<p>Year greater then:</p>
@@ -48,7 +41,7 @@
 									{{ myFilter.form.year_lt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Price greather then:</p>
+								<p>Price greater then:</p>
 									{{ myFilter.form.price_gt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
@@ -63,7 +56,9 @@
 
 
 	<br>
-			<button class="btn btn-dark" type="submit">Search</button>
+
+
+                                    <button class="btn-danger" type="submit">Search</button></form>
 								</form>
 							</div>
 							<!--Element Section End-->
@@ -85,11 +80,9 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="cs-column-text"> <span class="cs-color" style="font-size:14px;margin-bottom:15px;text-transform: capitalize !important; font-weight:bold;">ADAPTIVE DRIVE HEAD uP DISPLAY</span>
-							<h1 style=" line-height:43px !important;">Matte Black Chevy C7 Corvette
-								Stingray on Custom 21in Forgiato
-								Quinto Wheels.</h1>
-							<p style="margin-bottom:25px; ">Arear view camera and lane departure warning. This car has 6 airbags fitted for your protection. It has front &amp; rear power windows, central locking and 2nd row split folding seats. Family life is made easy in this 2016 Jaguar XF. This car has Bluetooth connectivity, side curtain airbags, subwoofer, trailer sway control, sports pedals and heads up information display. This car has forward collision alert/warning. This car comes with enough seats for 5. You can relax.</p>
+						<div class="cs-column-text"> <span class="cs-color" style="font-size:14px;margin-bottom:15px;text-transform: capitalize !important; font-weight:bold;">WELCOME TO DRIVEBUY AUTO SALES</span>
+							<h1 style=" line-height:43px !important;">Serving London For More Than A Decade</h1>
+							<p style="margin-bottom:25px; ">We are passionate about our vehicles and the people we sell them too. Our customers happiness is what drives us to deliver exceptional customer service, and we are here to find you that perfect car. A car that will meet and exceed your expectations, we offer a wide selection of quality used vehicles to suit your needs, and if we don't have it on our lot we will find it for you.</p>
 							<a href="#" class="cs-button" style="color:#fff;font-size:11px; padding:12px 45px; font-weight:bold; text-transform:uppercase;">Kim Broders</a> </div>
 					</div>
 				</div>
@@ -106,15 +99,15 @@
 						<div class="row">
 							<div class="col-lg-12 col-md-12 co-sm-12 col-xs-12"><!--Element Section Start-->
 								<div class="cs-section-title">
-									<h3 style="text-transform:uppercase !important;">Perfect Cars for you</h3>
-									<p style="text-transform:uppercase;font-size:11px;color:#999999 !important;">It will help us find the Toyota you're looking for in your area.</p>
+									<h3 style="text-transform:uppercase !important;">SNEAK PEAK OF OUR INVENTORY</h3>
+									<p style="text-transform:uppercase;font-size:11px;color:#999999 !important;">CHECK OUT OUR DEDICATED INVENTORY PAGE TO VIEW ALL LISTINGS</p>
 								</div>
 								<!--Tabs Start-->
 
 								<div class="cs-tabs full-width">
 									<ul class="nav nav-tabs">
-										<li class="active"><a data-toggle="tab" href="#home">New Cars</a></li>
-										<li><a data-toggle="tab" href="#menu1">Used Cars</a></li>
+										<li class="active"><a data-toggle="tab" href="#home">Under $7000</a></li>
+										<li><a data-toggle="tab" href="#menu1">Over $7000</a></li>
 
 									</ul>
 									<div class="tab-content">

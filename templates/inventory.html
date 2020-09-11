@@ -1,15 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-<br><br>
-<h3>Our inventory</h3>
+	<div class="cs-subheader center" style="background:url({% static 'assets/extra-images/bg-subheader.jpg' %}) no-repeat 0 0 /cover; min-height:296px; padding:90px 0 0; margin-bottom:70px;">
+		<div class="container">
+			<div class="cs-page-title">
+				<h1 style="color:#fff !important;">Inventory</h1>
+				<p style="color:#fff;">We specialize in a fantastic selection of top quality used vehicles at affordable prices.
+                    We understand the importance of helping a customer find the vehicle that not only suits their needs but also fits comfortably into their budget.</p>
+			</div>
+		</div>
+	</div>
 <br>
 <div class="row">
   {% for car in inventory_cars %}
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="auto-listing auto-grid">
       <div class="cs-media">
-        <figure> <img src="{{car.image_main.url }}" alt="#"/>
+        <figure> <img style="object-fit: contain;" height="200px" width="350px" src="{{car.image_main.url }}" alt="#"/>
         </figure>
       </div>
       <div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
