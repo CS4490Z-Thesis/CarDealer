@@ -2,358 +2,178 @@
 {% load static %}
 
 {% block content %}
-
-	<!-- Header End -->
-
 <style>
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
+    .galleria{   margin: auto;
+  width: 340px;
+ height: 340px; background: #242931 }
 
-* {
-  box-sizing: border-box;
-}
-.grid {
-margin-left:auto;
-margin-right:auto;
-width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  align-items: stretch;
-  justify-items: stretch;
-  }
-.grid img {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-    max-width: 100%;
-}
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  padding: 5px;
-
-width:15%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 </style>
+    <br><br>
+	<!-- Main Start -->
+	<div class="main-section">
+		<div class="page-section" style="margin-bottom:30px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-fuel1 cs-color" style="font-size:70px;"> </i> </div>
+							<div class="cs-text">
+								<h6>OIL CHANGES </h6>
+								<p>Vivamus erat diam, condimentum in aliquet sed, bibendum at quam. Phasellus lacus mauris.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-car230 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>AIR CONDITIONING</h6>
+								<p>Nulla a gravida purus. Fusce at interdum libero, at. Vivamus erat diam, condimentum in bibendum                                            at quam.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-energy42 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>AUTO ELECTRIC </h6>
+								<p>Etiam et maximus nisi, nec scelerisque neque. Nunc euismod iaculis urna, id eleifend lorem                                             aliquet at. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-section" style="margin-bottom:40px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<div class="cs-column-text">
+							<h2 style="font-size:26px !important;">WELCOME TO THE AutoMotive</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur corporis lab. Architecto, maiores, similique, eos, ea doloribus nihil accusantium fuga numquam corporis nostrum eligendi nemo sapiente quibusdam consequuntur tempore. Suscipit.</p>
+							<ul class="cs-icon-list">
+								<li><i class="icon-check2 cs-color"></i>Volutpat luctus lacus hendrerit taciti lobortis in.</li>
+								<li><i class="icon-check2 cs-color"></i>Faucibus amet consectetur erat donec venenatis leo.</li>
+								<li><i class="icon-check2 cs-color"></i>Ullamcorper conubia, aenean quisque mattis malesuada.</li>
+								<li><i class="icon-check2 cs-color"></i>quam quisque ligula, maecenas ligula proin ut augue.</li>
+							</ul>
+							<a href="#" class="btn-contact cs-color csborder-color">Contact us</a> </div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="galleria">
+            {% if cars.image_main %}
+            <img src="{{ cars.image_main.url }}">
+            {% endif %}
 
-<body>
-<br>
-<h2 style="text-align:center">Gallery</h2>
+            {% if cars.image1 %}
+            <img src="{{ cars.image1.url }}">
+            {% endif %}
 
-<main class="grid">
+            {% if cars.image2 %}
+            <img src="{{ cars.image2.url }}">
+            {% endif %}
 
-	{% if cars.imagemain %}
-    <img src="{{ cars.imagemain.url }}"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image3 %}
+            <img src="{{ cars.image3.url }}">
+            {% endif %}
 
-	{% if cars.image1 %}
-    <img src="{{ cars.image1.url }}"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image4 %}
+            <img src="{{ cars.image4.url }}">
+            {% endif %}
 
-	{% if cars.image2 %}
-    <img src="{{ cars.image2.url }}"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image5 %}
+            <img src="{{ cars.image5.url }}">
+            {% endif %}
 
-	{% if cars.image3 %}
-    <img src="{{ cars.image3.url }}"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image6 %}
+            <img src="{{ cars.image6.url }}">
+            {% endif %}
 
-	{% if cars.image4 %}
-    <img src="{{ cars.image4.url }}"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image7 %}
+            <img src="{{ cars.image7.url }}">
+            {% endif %}
 
-	{% if cars.image5 %}
-    <img src="{{ cars.image5.url }}"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image8 %}
+            <img src="{{ cars.image8.url }}">
+            {% endif %}
 
- 	{% if cars.image6 %}
-	<img src="{{ cars.image6.url }}"  onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image9 %}
+            <img src="{{ cars.image9.url }}">
+            {% endif %}
 
-	{% if cars.image7 %}
-	<img src="{{ cars.image7.url }}"  onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image10 %}
+            <img src="{{ cars.image10.url }}">
+            {% endif %}
 
- 	{% if cars.image8 %}
-	<img src="{{ cars.image8.url }}"  onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image11 %}
+            <img src="{{ cars.image11.url }}">
+            {% endif %}
 
-	{% if cars.image9 %}
-    <img src="{{ cars.image9.url }}"  onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image12 %}
+            <img src="{{ cars.image12.url }}">
+            {% endif %}
 
-	{% if cars.image10 %}
-	<img src="{{ cars.image10.url }}"  onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image13 %}
+            <img src="{{ cars.image13.url }}">
+            {% endif %}
 
-	{% if cars.image11 %}
-    <img src="{{ cars.image11.url }}"  onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image14 %}
+            <img src="{{ cars.image14.url }}">
+            {% endif %}
 
-	{% if cars.image12 %}
-    <img src="{{ cars.image12.url }}"  onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-    {% endif %}
+            {% if cars.image15 %}
+            <img src="{{ cars.image15.url }}">
+            {% endif %}
+        </div>
+        <script>
+            (function() {
+                Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	{% if cars.image13 %}
-	<img src="{{ cars.image13.url }}"  onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-    {% endif %}
-
-	{% if cars.image14 %}
-    <img src="{{ cars.image14.url }}"  onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
-    {% endif %}
-
-	{% if cars.image15 %}
-    <img src="{{ cars.image15.url }}"  onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
-    {% endif %}
-
-
-
-</main>
-
-<div id="myModal" class="modal" style="text-align:center;">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content" > >
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="{{ cars.image1.url }}" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="{{ cars.image2.url }}" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="{{ cars.image3.url }}" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="{{ cars.image4.url }}" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="column">
-      <img class="demo cursor" src="{{ cars.image1.url }}" style="width:100px;height:100px;px" onclick="currentSlide(1)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="{{ cars.image2.url }}" style="width:100px;height:100px;px" onclick="currentSlide(2)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="{{ cars.image3.url }}" style="width:100px;height:100px;" onclick="currentSlide(3)">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="{{ cars.image4.url }}" style="width:100px;height:100px;" onclick="currentSlide(4)">
-    </div>
-  </div>
-</div>
-
-<script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-    	<!-- original code starts -->
-
-</body>
-{#<div class="container">#}
-{#<br>Dealer: {{ cars.dealer.name }}#}
-{#<br>Dealers mail: {{ cars.dealer.email }}#}
-{#<br>Brand: {{ cars.brand }}#}
-{#<br>Category: {{cars.category}}#}
-{##}
-{#<br>Kilometers: {{ cars.kilometers }}#}
-{#<br>Transmission: {{ cars.transmission }}#}
-{#<br>Year: {{cars.year}}#}
-{#<br> Power: {{ cars.power }} hp#}
-{#<br> Fuel: {{cars.fuel }} l#}
-{#<h4>Price:{{cars.price}} $</h4>#}
-{##}
-{#<br>{{ cars.description }}#}
-{#<br><br>#}
-{#<div class="row">#}
-{##}
-{#  {% if cars.image1 %}#}
-{#  <div class="col-md-3">#}
-{#    <img src="{{ cars.image1.url }}" width="200px" height="150px" alt="">#}
-{#  </div>#}
-{#  {% endif %}#}
-{#  {% if cars.image2 %}#}
-{#  <div class="col-md-3">#}
-{#    <img src="{{ cars.image2.url }}" width="200px" height="150px" alt="">#}
-{#  </div>#}
-{#  {% endif %}#}
-{#  {% if cars.image3 %}#}
-{#  <div class="col-md-3">#}
-{#    <img src="{{ cars.image3.url }}" width="200px" height="150px" alt="">#}
-{#  </div>#}
-{#  {% endif %}#}
-{#  {% if cars.image4 %}#}
-{#  <div class="col-md-3">#}
-{#    <img src="{{ cars.image4.url }}" width="200px" height="150px" alt="">#}
-{#  </div>#}
-{#  {% endif %}#}
-{#  {% if cars.image5 %}#}
-{#  <div class="col-md-3">#}
-{#    <img src="{{ cars.image5.url }}" width="200px" height="150px" alt="">#}
-{#  </div>#}
-{#  {% endif %}#}
-{#</div>#}
-{#</div>#}
-
+		<div class="page-section" style=" background:url(assets/extra-images/bg-counter.jpg) no-repeat 0 0 / cover; margin-bottom:50px; margin-top:20px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="cs-counter">
+							<div class="cs-media">
+								<figure> <i class="icon-truck2 cs-color"> </i> </figure>
+							</div>
+							<div class="cs-text" style="color:#fff;"> <strong class="counter">3,863</strong> <span>Car Sold</span> </div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="cs-counter">
+							<div class="cs-media">
+								<figure> <i class="icon-car36  cs-color"> </i> </figure>
+							</div>
+							<div class="cs-text" style="color:#fff;"> <strong class="counter">89,897</strong> <span>Car Sold</span> </div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="cs-counter">
+							<div class="cs-media">
+								<figure> <i class="icon-settings  cs-color"> </i> </figure>
+							</div>
+							<div class="cs-text" style="color:#fff;"> <strong class="counter">741</strong> <span>Registerd Agents</span> </div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+						<div class="cs-counter">
+							<div class="cs-media">
+								<figure> <i class="icon-directions_car cs-color"> </i> </figure>
+							</div>
+							<div class="cs-text" style="color:#fff;"> <strong class="counter">3289</strong> <span>Certified Agents</span> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main End -->
 {% endblock content %}

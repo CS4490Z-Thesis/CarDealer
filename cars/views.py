@@ -104,4 +104,8 @@ def contact(request):
         )
         return render(request, 'contact.html')
     else:
-        return render(request, 'contact.html')
+        all_dealers = Dealer.objects.all()
+        context = {
+            'all_dealers': all_dealers
+        }
+        return render(request, 'contact.html', context)
