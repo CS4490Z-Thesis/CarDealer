@@ -29,36 +29,37 @@
 							<div class="main-search">
 								<form method="get" action="{% url 'filter_results' %}">
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Brand:</p>
+								<p>Make:</p>
 									{{ myFilter.form.brand }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Year greater then:</p>
+								<p>Body Type:</p>
+									{{ myFilter.form.bodytype }}
+									</div>
+									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+								<p>Year >= than:</p>
 									{{ myFilter.form.year_gt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Year less then:</p>
+								<p>Year < than:</p>
 									{{ myFilter.form.year_lt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Price greater then:</p>
+								<p>Price >= then:</p>
 									{{ myFilter.form.price_gt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Price less then:</p>
+								<p>Price < then:</p>
 									{{ myFilter.form.price_lt }}
 									</div>
 									<div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
 								<p>Transmission:</p>
 									{{ myFilter.form.transmission }}
 									</div>
+	                            <br><br>
 
 
-
-	<br>
-
-
-                                    <button class="btn-danger" type="submit">Search</button></form>
+                                    <button class="cs-btn-submit cs-color" style=" border-spacing: 15px;" type="submit">&nbsp&nbsp&nbsp&nbspSearch&nbsp&nbsp&nbsp&nbsp</button><br><br></form>
 								</form>
 							</div>
 							<!--Element Section End-->
@@ -69,25 +70,38 @@
 		</div>
 		<!--Main Banner form-->
 		<!--image frame with cloum text by My Shahzad-->
-		<div class="page-section" style="margin-bottom:110px;">
+		<div class="page-section" style="margin-bottom:80px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="image-frame defualt">
 							<div class="cs-media">
-								<figure> <img src="{% static 'assets/extra-images/image-frame.jpg' %}" alt=""/> </figure>
+								<figure> <img src="{% static 'assets/extra-images/image-frame-2.png' %}" alt=""/> </figure>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="cs-column-text"> <span class="cs-color" style="font-size:14px;margin-bottom:15px;text-transform: capitalize !important; font-weight:bold;">WELCOME TO DRIVEBUY AUTO SALES</span>
 							<h1 style=" line-height:43px !important;">Serving London For More Than A Decade</h1>
-							<p style="margin-bottom:25px; ">We are passionate about our vehicles and the people we sell them too. Our customers happiness is what drives us to deliver exceptional customer service, and we are here to find you that perfect car. A car that will meet and exceed your expectations, we offer a wide selection of quality used vehicles to suit your needs, and if we don't have it on our lot we will find it for you.</p>
-							<a href="#" class="cs-button" style="color:#fff;font-size:11px; padding:12px 45px; font-weight:bold; text-transform:uppercase;">Kim Broders</a> </div>
+							<p style="margin-bottom:25px; ">
+                                At Drive Buy Auto Sales, we aim for you to drive and buy a vehicle that will
+                                best serve your needs. With dealer(s) who have been in this industry for more than a
+                                decade, we have the experience and know-how to find the best tailored vehicles for our
+                                customers.<br><br>
+                                Our business strategy is simple.<br><br>1. Make sure all the vehicles on our lot are in
+                                good running condition and that they rev with a quality sound.<br>2. Sell these vehicles
+                                as cheap as we can.<br><br>Through this strategy we are constantly selling vehicles and
+                                replenishing our stock, so don't miss out on getting to learn more about your future
+                                potential vehicle!
+                                <br><br>
+                                If we don't have a particular vehicle of your liking within our lot, contact us anyways and
+                                we will help find the best vehicle for you through our trade networks.<br></p>
+							<a href="/contact" class="cs-button" style="color:#fff;font-size:11px; padding:12px 45px; font-weight:bold; text-transform:uppercase;">Contact Us</a> </div>
 					</div>
 				</div>
 			</div>
 		</div>
+        <div class="cs-seprater" style="text-align:center;"> <span> <i class="icon-transport177"> </i> </span> </div>
 
 
 		<!--full width category section-->
@@ -108,6 +122,8 @@
 									<ul class="nav nav-tabs">
 										<li class="active"><a data-toggle="tab" href="#home">Under $7000</a></li>
 										<li><a data-toggle="tab" href="#menu1">Over $7000</a></li>
+ 										<li><a data-toggle="tab" href="#" onclick="getInventory();">Full Inventory</a></li>
+
 
 									</ul>
 									<div class="tab-content">
@@ -123,7 +139,7 @@
 														<div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
 															<div class="post-title">
 																<h6><a href="#">{{ car.brand }} </a></h6>
-																<div class="auto-price"><span class="cs-color">{{ car.price }} $</span></div>
+																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
 															</div>
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
 															<br>Year: {{ car.year }}
@@ -146,7 +162,7 @@
 														<div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
 															<div class="post-title">
 																<h6><a href="#">{{ car.brand }} </a></h6>
-																<div class="auto-price"><span class="cs-color">{{ car.price }} $</span></div>
+																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
 															</div>
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
 															<br>Year: {{ car.year }}
@@ -188,14 +204,14 @@
 										{% for car in latest_cars %}
 										<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 											<div class="cs-media">
-												<figure> <a href="#"> <img src="{{car.image_main.url }}" alt=""/> </a>
+												<figure> <a href="#"> <img style="min-width:300px;min-height:300px;object-fit: cover;" src="{{car.image_main.url }}" alt=""/> </a>
 													<figcaption> </figcaption>
 												</figure>
 
 											</div>
 											{{ car.brand }}
 											<br>Category:{{ car.category }}
-											<div class="auto-text cs-bgcolor"> <span>{{ car.price }} $</span><a href="{{ car.get_absolute_url }}" class="cs-button pull-right"><i class="icon-arrow_forward
+											<div class="auto-text cs-bgcolor"> <span>${{ car.price }} </span><a href="{{ car.get_absolute_url }}" class="cs-button pull-right"><i class="icon-arrow_forward
 "></i></a> </div>
 										</li>
 										{% endfor %}
@@ -210,75 +226,15 @@
 		</div>
 		<!--Latest Model Auto Slider End-->
 
-		<div class="page-section" style="margin-bottom:70px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="section-title" style="text-align:center; color:#333333; margin-bottom:45px;">
-							<h3 style="margin-bottom:5px;">WHY CHOOSE US</h3>
-							<p>It will help us find the Toyota you're looking for in your area.</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-fuel1 cs-color" style="font-size:70px;"> </i> </div>
-							<div class="cs-text">
-								<h6>OIL CHANGES </h6>
-								<p>Vivamus erat diam, condimentum in aliquet sed, bibendum at quam. Phasellus lacus mauris.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-car230 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>AIR CONDITIONING</h6>
-								<p>Nulla a gravida purus. Fusce at interdum libero, at. Vivamus erat diam, condimentum in bibendum                                            at quam.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-energy42 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>AUTO ELECTRIC </h6>
-								<p>Etiam et maximus nisi, nec scelerisque neque. Nunc euismod iaculis urna, id eleifend lorem                                             aliquet at. </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-car36 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>BRAKE SERVICE </h6>
-								<p>Vivamus erat diam, condimentum in aliquet sed, bibendum at quam. Phasellus lacus mauris.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-car228 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>TRANSMISSION</h6>
-								<p>Nulla a gravida purus. Fusce at interdum libero, at. Vivamus erat diam, condimentum in bibendum                                            at quam.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-transport177 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>TIRE &amp; WHEEL SERVICE</h6>
-								<p>Etiam et maximus nisi, nec scelerisque neque. Nunc euismod iaculis urna, id eleifend lorem                                              aliquet at. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 	</div>
 	<!-- Main End -->
+    <script>
+    function getInventory(){
+        window.location.pathname = '/inventory'
+
+    }
+    </script>
 
 
 

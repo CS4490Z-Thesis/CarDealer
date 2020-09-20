@@ -44,10 +44,29 @@ class Car(models.Model):
     bodytype = models.CharField(max_length=50)
     colour = models.CharField(max_length=50)
 
-    YEAR_CHOICES = [(r,r) for r in range(2005, datetime.date.today().year+1)]
+    YEAR_CHOICES = [(r,r) for r in range(1960, datetime.date.today().year+1)]
     year = models.IntegerField(('year'), choices=YEAR_CHOICES, default=datetime.datetime.now().year)
     price = models.IntegerField()
     description = models.TextField()
+    listheader1 = models.TextField()
+    listcontents1= models.TextField()
+    listheader2 = models.TextField()
+    listcontents2= models.TextField()
+    listheader3 = models.TextField()
+    listcontents3= models.TextField()
+    listheader4 = models.TextField()
+    listcontents4= models.TextField()
+    listheader5 = models.TextField()
+    listcontents5 = models.TextField()
+    listheader6 = models.TextField()
+    listcontents6 = models.TextField()
+    listheader7 = models.TextField()
+    listcontents7 = models.TextField()
+    listheader8 = models.TextField()
+    listcontents8 = models.TextField()
+    listheader9 = models.TextField()
+    listcontents9 = models.TextField()
+
     date = models.DateField()
 
     def __str__(self):

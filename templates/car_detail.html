@@ -11,53 +11,14 @@
     <br><br>
 	<!-- Main Start -->
 	<div class="main-section">
-		<div class="page-section" style="margin-bottom:30px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-fuel1 cs-color" style="font-size:70px;"> </i> </div>
-							<div class="cs-text">
-								<h6>OIL CHANGES </h6>
-								<p>Vivamus erat diam, condimentum in aliquet sed, bibendum at quam. Phasellus lacus mauris.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-car230 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>AIR CONDITIONING</h6>
-								<p>Nulla a gravida purus. Fusce at interdum libero, at. Vivamus erat diam, condimentum in bibendum                                            at quam.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-						<div class="cs-services">
-							<div class="cs-media"> <i class="icon-energy42 cs-color" style="font-size:40px"> </i> </div>
-							<div class="cs-text">
-								<h6>AUTO ELECTRIC </h6>
-								<p>Etiam et maximus nisi, nec scelerisque neque. Nunc euismod iaculis urna, id eleifend lorem                                             aliquet at. </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="page-section" style="margin-bottom:40px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="cs-column-text">
-							<h2 style="font-size:26px !important;">WELCOME TO THE AutoMotive</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur corporis lab. Architecto, maiores, similique, eos, ea doloribus nihil accusantium fuga numquam corporis nostrum eligendi nemo sapiente quibusdam consequuntur tempore. Suscipit.</p>
-							<ul class="cs-icon-list">
-								<li><i class="icon-check2 cs-color"></i>Volutpat luctus lacus hendrerit taciti lobortis in.</li>
-								<li><i class="icon-check2 cs-color"></i>Faucibus amet consectetur erat donec venenatis leo.</li>
-								<li><i class="icon-check2 cs-color"></i>Ullamcorper conubia, aenean quisque mattis malesuada.</li>
-								<li><i class="icon-check2 cs-color"></i>quam quisque ligula, maecenas ligula proin ut augue.</li>
-							</ul>
-							<a href="#" class="btn-contact cs-color csborder-color">Contact us</a> </div>
+							<h2 style="font-size:26px !important;">{{ cars.brand }}</h2>
+							<p>{{ cars.description }}</p>
+							<a href="/contact" class="btn-contact cs-color csborder-color">Contact us</a> </div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
         <div class="galleria">
@@ -136,44 +97,278 @@
 			</div>
 		</div>
 
-		<div class="page-section" style=" background:url(assets/extra-images/bg-counter.jpg) no-repeat 0 0 / cover; margin-bottom:50px; margin-top:20px;">
+	</div>
+    		<div class="page-section" style="margin-bottom:70px; text-align: center">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="cs-counter">
-							<div class="cs-media">
-								<figure> <i class="icon-truck2 cs-color"> </i> </figure>
-							</div>
-							<div class="cs-text" style="color:#fff;"> <strong class="counter">3,863</strong> <span>Car Sold</span> </div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="section-title" style="text-align:center; color:#333333; margin-bottom:45px;">
+							<h3 style="margin-bottom:5px;">ADDITIONAL DETAILS</h3>
+							<p>Comprehensive Specifications for the {{ cars.brand }}</p>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="cs-counter">
-							<div class="cs-media">
-								<figure> <i class="icon-car36  cs-color"> </i> </figure>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-calendar" style="font-size:40px;"> </i> </div>
+							<div class="cs-text">
+								<h6>YEAR </h6>
+								<p>{{ cars.year }}</p>
 							</div>
-							<div class="cs-text" style="color:#fff;"> <strong class="counter">89,897</strong> <span>Car Sold</span> </div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="cs-counter">
-							<div class="cs-media">
-								<figure> <i class="icon-settings  cs-color"> </i> </figure>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-shield" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>MAKE</h6>
+								<p>{{ cars.make }}</p>
 							</div>
-							<div class="cs-text" style="color:#fff;"> <strong class="counter">741</strong> <span>Registerd Agents</span> </div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-						<div class="cs-counter">
-							<div class="cs-media">
-								<figure> <i class="icon-directions_car cs-color"> </i> </figure>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-key22" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>MODEL </h6>
+								<p>{{ cars.model }}</p>
 							</div>
-							<div class="cs-text" style="color:#fff;"> <strong class="counter">3289</strong> <span>Certified Agents</span> </div>
 						</div>
 					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-plus-square-o" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>TRIM</h6>
+								<p>{{ cars.trim }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-paint-format" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>COLOUR</h6>
+								<p>{{ cars.colour }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-car" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>BODY TYPE</h6>
+								<p>{{ cars.bodytype }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-gear" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>DRIVETRAIN</h6>
+								<p>{{ cars.drivetrain }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-car228 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>TRANSMISSION</h6>
+								<p>{{ cars.transmission }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-fuel1 cs-color" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>FUEL TYPE</h6>
+								<p>{{ cars.fueltype }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-speedometer" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>KILOMETERS</h6>
+								<p>{{ cars.kilometers}}</p>
+							</div>
+						</div>
+					</div>
+                    <div style="visibility: hidden;" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-speedometer" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>KILOMETERS</h6>
+								<p>{{ cars.kilometers}}</p>
+							</div>
+						</div>
+					</div>
+					<div style="visibility: hidden;" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<div class="cs-services">
+							<div class="cs-media"> <i class="icon-speedometer" style="font-size:40px"> </i> </div>
+							<div class="cs-text">
+								<h6>KILOMETERS</h6>
+								<p>{{ cars.kilometers}}</p>
+							</div>
+						</div>
+					</div>
+
 				</div>
+                    {% if cars.listheader1 != "none" and cars.listcontents1 != "none" %}
+                        <input type="hidden" id="listcontents1" value="{{ cars.listcontents1}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader1}}</h2>
+							<ul id="cs-icon-list1" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents1").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list1').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader2 != "none" and cars.listcontents2 != "none" %}
+                        <input type="hidden" id="listcontents2" value="{{ cars.listcontents2}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader2}}</h2>
+							<ul id="cs-icon-list2" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents2").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list2').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader3 != "none" and cars.listcontents3 != "none" %}
+                        <input type="hidden" id="listcontents3" value="{{ cars.listcontents3}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader3}}</h2>
+							<ul id="cs-icon-list3" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents3").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list3').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader4 != "none" and cars.listcontents4 != "none" %}
+                        <input type="hidden" id="listcontents4" value="{{ cars.listcontents4}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader4}}</h2>
+							<ul id="cs-icon-list4" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents4").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list4').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader5 != "none" and cars.listcontents5 != "none" %}
+                        <input type="hidden" id="listcontents5" value="{{ cars.listcontents5}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader5}}</h2>
+							<ul id="cs-icon-list5" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents5").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list5').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader6 != "none" and cars.listcontents6 != "none" %}
+                        <input type="hidden" id="listcontents6" value="{{ cars.listcontents6}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader6}}</h2>
+							<ul id="cs-icon-list6" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents6").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list6').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader7 != "none" and cars.listcontents7 != "none" %}
+                        <input type="hidden" id="listcontents7" value="{{ cars.listcontents7}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader7}}</h2>
+							<ul id="cs-icon-list7" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents7").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list7').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader8 != "none" and cars.listcontents1 != "none" %}
+                        <input type="hidden" id="listcontents8" value="{{ cars.listcontents8}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader8}}</h2>
+							<ul id="cs-icon-list8" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents8").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list8').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+                    {% if cars.listheader1 != "none" and cars.listcontents9 != "none" %}
+                        <input type="hidden" id="listcontents9" value="{{ cars.listcontents9}}">
+                        <div class="cs-column-text">
+							<h2 style="font-size:26px !important;">{{ cars.listheader9}}</h2>
+							<ul id="cs-icon-list9" class="cs-icon-list">
+                            </ul>
+                        </div>
+                        <script>
+                        var listdata=document.getElementById("listcontents9").value.split("\n");
+                        for (x in listdata){
+                              document.querySelector('#cs-icon-list9').insertAdjacentHTML(
+                                'afterbegin', '<li><i class="icon-check2 cs-color"></i>'+listdata[x]+'</li><br>'
+                              );
+                        }
+                        </script>
+                        {% endif %}
+
+
+
+
+
 			</div>
 		</div>
-	</div>
+
+
 	<!-- Main End -->
 {% endblock content %}
