@@ -60,7 +60,7 @@
       </a></div>
       <div class="auto-text">
         <div class="post-title">
-          <h6><a href="#">{{ car.brand }} </a></h6>
+          <h6><a href="{{ car.get_absolute_url }}">{{ car.brand }} </a></h6>
           <div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
         </div>
         <i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
