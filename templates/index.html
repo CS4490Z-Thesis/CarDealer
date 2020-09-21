@@ -20,7 +20,8 @@
 		</div>
 		<!--Main Banner-->
 		<!--Main Banner form-->
-		<div class="page-section" style="background: rgba(36, 41, 49, 1); padding-top:33px;-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);-moz-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);box-shadow: 0 0 5px rgba(0,0,0,.4), inset 0px 2px rgba(255,255,255,.3);border: solid 1px #242931;margin-bottom:110px;">
+		<div class="page-section" style="background: rgba(36, 41, 49, 1); padding-top:33px;-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);-moz-box-shadow: 0 0 5px rgba(0,0,0,.4), inset 1px 2px rgba(255,255,255,.3);box-shadow: 0 0 5px rgba(0,0,0,.4), inset 0px 2px rgba(255,255,255,.3);border: solid 1px #242931;margin-bottom:110px;"><h2 style="text-align: center; color: whitesmoke !important;">Quick Search</h2>
+            <h6 style="text-align: center; color: gainsboro !important;">(You can leave fields to be blank)</h6>
 			<div class="container">
 				<div class="row" style="text-align: center;">
 					<div class="section-fullwidtht col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -33,10 +34,6 @@
 									{{ myFilter.form.brand }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Body Type:</p>
-									{{ myFilter.form.bodytype }}
-									</div>
-									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 								<p>Year >= than:</p>
 									{{ myFilter.form.year_gt }}
 									</div>
@@ -45,21 +42,30 @@
 									{{ myFilter.form.year_lt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Price >= then:</p>
+								<p>Price >= than:</p>
 									{{ myFilter.form.price_gt }}
 									</div>
 									<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-								<p>Price < then:</p>
+								<p>Price < than:</p>
 									{{ myFilter.form.price_lt }}
-									</div>
-									<div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
-								<p>Transmission:</p>
-									{{ myFilter.form.transmission }}
 									</div>
 	                            <br><br>
 
 
-                                    <button class="cs-btn-submit cs-color" style=" border-spacing: 15px;" type="submit">&nbsp&nbsp&nbsp&nbspSearch&nbsp&nbsp&nbsp&nbsp</button><br><br></form>
+                                    <button class="cs-btn-submit cs-color" style="	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#b32454;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;border-spacing: 15px;!important;" type="submit">&nbsp&nbsp&nbsp&nbspSearch&nbsp&nbsp&nbsp&nbsp</button><br><br></form>
 								</form>
 							</div>
 							<!--Element Section End-->
@@ -81,7 +87,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="cs-column-text"> <span class="cs-color" style="font-size:14px;margin-bottom:15px;text-transform: capitalize !important; font-weight:bold;">WELCOME TO DRIVEBUY AUTO SALES</span>
+						<div class="cs-column-text"> <span class="cs-color" style="font-size:14px;margin-bottom:15px;text-transform: capitalize !important; font-weight:bold;">WELCOME TO DRIVE BUY AUTO SALES</span>
 							<h1 style=" line-height:43px !important;">Serving London For More Than A Decade</h1>
 							<p style="margin-bottom:25px; ">
                                 At Drive Buy Auto Sales, we aim for you to drive and buy a vehicle that will
@@ -142,7 +148,7 @@
 																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
 															</div>
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
-															<br>Year: {{ car.year }}
+															<br>
 
 															<a href="{{ car.get_absolute_url }}" class="View-btn">View Details<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
@@ -165,7 +171,7 @@
 																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
 															</div>
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
-															<br>Year: {{ car.year }}
+															<br>
 
 															<a href="{{ car.get_absolute_url }}" class="View-btn">View Details<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
