@@ -52,10 +52,10 @@
   {% for car in all %}
   <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="auto-listing auto-grid">
-      <div class="cs-media">
+      <div class="cs-media"><a href="{{ car.get_absolute_url }}">
         <figure> <img src="{{car.image_main.url }}" alt="#"/>
         </figure>
-      </div>
+      </a></div>
       <div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
         <div class="post-title">
           <h6><a href="#">{{ car.brand }} </a></h6>
