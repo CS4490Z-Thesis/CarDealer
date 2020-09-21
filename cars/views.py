@@ -8,8 +8,8 @@ from django.core.mail import send_mail
 
 # Create your views here.
 def index(request):
-    new_cars = Car.objects.filter(price__range=(0, 7000))[:8]
-    used_cars = Car.objects.filter(price__range=(7001, 100000))[:8]
+    new_cars = Car.objects.filter(bodytype__contains="sedan")[:8]
+    used_cars = Car.objects.filter(bodytype__contains="truck")[:8]
     latest_cars = Car.objects.all().order_by('-date')[:5]
     all = Car.objects.all()
     myFilter = CarFilter(request.GET, queryset=all)

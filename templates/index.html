@@ -120,8 +120,8 @@
 
 								<div class="cs-tabs full-width">
 									<ul class="nav nav-tabs">
-										<li class="active"><a data-toggle="tab" href="#home">Under $7000</a></li>
-										<li><a data-toggle="tab" href="#menu1">Over $7000</a></li>
+										<li class="active"><a data-toggle="tab" href="#home">Sedans</a></li>
+										<li><a data-toggle="tab" href="#menu1">Trucks</a></li>
  										<li><a data-toggle="tab" href="#" onclick="getInventory();">Full Inventory</a></li>
 
 
@@ -132,11 +132,11 @@
 												{% for car in new_cars %}
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
-														<div class="cs-media">
+														<div class="cs-media"><a href="{{ car.get_absolute_url }}">
 															<figure> <img src="{{car.image_main.url }}" alt="#"/>
-															</figure>
+															</figure></a>
 														</div>
-														<div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
+														<div class="auto-text">
 															<div class="post-title">
 																<h6><a href="#">{{ car.brand }} </a></h6>
 																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
@@ -144,7 +144,7 @@
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
 															<br>Year: {{ car.year }}
 
-															<a href="{{ car.get_absolute_url }}" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
+															<a href="{{ car.get_absolute_url }}" class="View-btn">View Details<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
 												</div>
 												{% endfor %}
@@ -155,11 +155,11 @@
 												{% for car in used_cars %}
 												<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 													<div class="auto-listing auto-grid">
-														<div class="cs-media">
+														<div class="cs-media"><a href="{{ car.get_absolute_url }}">
 															<figure> <img src="{{car.image_main.url }}" alt="#"/>
-															</figure>
+                                                            </figure></a>
 														</div>
-														<div class="auto-text"> <span class="cs-categories"><a href="#">{{ car.category }}</a></span>
+														<div class="auto-text">
 															<div class="post-title">
 																<h6><a href="#">{{ car.brand }} </a></h6>
 																<div class="auto-price"><span class="cs-color">${{ car.price }} </span></div>
@@ -167,7 +167,7 @@
 															<i class="icon-car228 cs-color" style="font-size:20px"> </i>{{ car.transmission }}
 															<br>Year: {{ car.year }}
 
-															<a href="{{ car.get_absolute_url }}" class="View-btn">View Detail<i class=" icon-arrow-long-right"></i></a> </div>
+															<a href="{{ car.get_absolute_url }}" class="View-btn">View Details<i class=" icon-arrow-long-right"></i></a> </div>
 													</div>
 												</div>
 												{% endfor %}
@@ -203,14 +203,14 @@
 									<ul class="cs-auto-box-slider row">
 										{% for car in latest_cars %}
 										<li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-											<div class="cs-media">
-												<figure> <a href="#"> <img style="min-width:300px;min-height:300px;object-fit: cover;" src="{{car.image_main.url }}" alt=""/> </a>
+											<div class="cs-media"><a href="{{ car.get_absolute_url }}">
+												<figure>  <img style="min-width:300px;min-height:300px;object-fit: cover;" src="{{car.image_main.url }}" alt=""/>
 													<figcaption> </figcaption>
-												</figure>
+												</figure></a>
 
 											</div>
 											{{ car.brand }}
-											<br>Category:{{ car.category }}
+											<br>Date Added: {{ car.date }}
 											<div class="auto-text cs-bgcolor"> <span>${{ car.price }} </span><a href="{{ car.get_absolute_url }}" class="cs-button pull-right"><i class="icon-arrow_forward
 "></i></a> </div>
 										</li>
